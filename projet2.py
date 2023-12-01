@@ -131,7 +131,7 @@ if page == pages[0]:
         "- Un cinéma en perte de vitesse situé dans la Creuse nous a contacté.\n"
         "- Il a décidé de passer le cap du digital en créant un site Internet taillé pour les locaux.\n"
         "- Pour aller encore plus loin, il demande de créer un moteur de recommandations de films qui à terme, enverra des notifications aux clients via Internet.\n"
-        "- Pour l’instant, aucun client n’a renseigné ses préférences, Nous sommes dans une situation de **cold start**."
+        "- Pour l’instant, aucun client n’a renseigné ses préférences, nous sommes dans une situation de **cold start**."
     )
 
 
@@ -153,12 +153,13 @@ if page == pages[0]:
 
     col2.subheader("RESSOURCES")
     col2.write(
-        "- Le client nous as donné une base de données de films basée sur la plateforme IMDb.\n"
-        "- elle est composé de 6 datasets (title.akas.tsv.gz, title.basics.tsv.gz, title.crew.tsv.gz, title.episode.tsv.gz, title.principals.tsv.gzv, title.ratings.tsv.gz, name.basics.tsv.gz \n"
-        "- Une base de données complémentaires venant de TMDB, contenant des données sur les pays des sociétés de production, le budget, les recettes et également un chemin vers les posters des films.\n"
-        "- les datasets sont très volumineux, il y a plus de 7M films et 10M acteurs référencés.\n"
+        "Le client nous as donné :\n"
+        "- une base de données de films basée sur la plateforme IMDb composée de 6 datasets (title.akas.tsv.gz, title.basics.tsv.gz, title.crew.tsv.gz, title.episode.tsv.gz, title.principals.tsv.gzv, title.ratings.tsv.gz, name.basics.tsv.gz \n"
+        "- Une base de données complémentaire venant de TMDB, contenant des données sur les pays des sociétés de production, le budget, les recettes et également un chemin vers les posters des films.\n"
         "- La documentation expliquant brièvement la définition de chaque colonne et de chaque table\n"
-        "- Le client nous demande de récupérer les images des films pour les afficher dans l'interface de recommandation\n"
+        "\n"
+        "les datasets sont très volumineux, il y a plus de 7M films et 10M acteurs référencés.\n"
+        "Le client nous demande de récupérer les images des films pour les afficher dans l'interface de recommandation\n"
         )
 
     st.markdown("---")
@@ -176,9 +177,9 @@ if page == pages[0]:
     col2.subheader("PROCESS DE PRODUCTION")
     col2.write(
         "- Analyse exploratoire et nettoyage des BDD \n" 
-        "- Developpement d'un algorithme de machine learning pour la recommandation \n" 
+        "- Développement d'un algorithme de machine learning pour la recommandation \n" 
         "- Utilisation de l'API pour le moteur de recommandation \n" 
-        "- Developpement du site avec Streamit"
+        "- Développement du site avec Streamit"
         )
 
     st.markdown("---")
@@ -210,7 +211,7 @@ elif page == pages[1] :
 
     st.subheader("Vous trouverez : ")
     st.write(":bar_chart: Une rubrique de **Statistiques de films** qui contient des statistiques sur les films (type, durée), acteurs (nombre de films, type de films).")
-    st.write(":clapper: Une rubrique de **Recommandations de films** qui contient des un moteur de recommandation de films en fonction de plusieurs critères")
+    st.write(":clapper: Une rubrique de **Recommandations de films** qui contient un moteur de recommandation de films en fonction de plusieurs critères")
     st.write(":email: Une rubrique d'**alerte** qui contient un formulaire pour vous inscrire à nos alertes")
 
 
